@@ -2,7 +2,7 @@ import numpy as np
 import streamlit as st
 import pickle
 
-model = pickle.load(open('iris_prediction.pkl.pkl','rb'))
+model = pickle.load(open('iris_prediction.pkl','rb'))
 st.title("Customer Segmentation")
 
 petal_len = float(st.text_input("petal_len: "))
